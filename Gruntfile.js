@@ -6,6 +6,7 @@
  * Copyright (c) 2014
  * Licensed under the MIT license.
  */
+const sass = require('node-sass');
 module.exports = function(grunt) {
 
 	require('load-grunt-tasks')(grunt);
@@ -93,6 +94,7 @@ module.exports = function(grunt) {
 				},
 				dist: {
 					options: {
+						implementation: sass,
 						outputStyle: 'nested'
 					},
 					files: {
